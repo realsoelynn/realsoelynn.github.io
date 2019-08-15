@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h1>Version 7</h1>
+    <h1>Version 8</h1>
     <input type="button" onClick = "window.location.href = 'https://www.paypal.com/mobile/checkout';" value="i worked" />
     <div id="rootElement"></div>
 <script type="text/babel">
@@ -21,7 +21,7 @@
         fetch('https://jsonplaceholder.typicode.com/todos/1')
         .then(response => response.json())
         .then(json => {
-            window.location.href = './redirect.html';
+            window.location.href = 'https://www.paypal.com/mobile/checkout';
         })
     }
     function App() {
