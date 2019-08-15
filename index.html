@@ -13,21 +13,26 @@
 </head>
 
 <body>
-    <div id="root"></div>
+    <div id="rootElement"></div>
 <script type="text/babel">
     function btnOpen() {
-        window.location.href = "https://www.paypal.com/mobile/checkout"
+        window.location.href = "https://www.paypal.com/mobile/checkout";
     }
 
     function App() {
         return (
             <div>
-                <button onclick={btnOpen}>
+                <button onClick={btnOpen}>
                     Open Sesame
                 </button>
             </div>
         )
     }
+
+    ReactDOM.render(
+      <App />,
+      rootElement
+    )
 </script>
 
 </body>
